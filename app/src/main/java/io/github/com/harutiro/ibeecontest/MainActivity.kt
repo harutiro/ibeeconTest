@@ -2,6 +2,7 @@ package io.github.com.harutiro.ibeecontest
 
 import android.bluetooth.le.AdvertiseCallback
 import android.bluetooth.le.AdvertiseSettings
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -53,6 +54,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button3).setOnClickListener {
             //送信開始
             beaconTransmitter.startAdvertising(beacon)
+        }
+
+        findViewById<Button>(R.id.inputIntentButton).setOnClickListener {
+            val intent = Intent(this,input::class.java)
+            startActivity(intent)
         }
 
     }
