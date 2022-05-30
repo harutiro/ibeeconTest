@@ -20,7 +20,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="状態確認"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -32,7 +32,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="終了"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,7 +41,7 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="開始"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -52,6 +52,30 @@
         android:layout_height="wrap_content"
         android:text="input"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="input2"
+        app:layout_constraintStart_toEndOf="@+id/inputIntentButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="input3"
+        app:layout_constraintStart_toEndOf="@+id/input2Button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/input4button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="input4"
+        app:layout_constraintStart_toEndOf="@+id/input3Button"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

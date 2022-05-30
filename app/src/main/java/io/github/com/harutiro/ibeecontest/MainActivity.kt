@@ -43,6 +43,8 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+
+
         findViewById<Button>(R.id.button).setOnClickListener {
             Log.d("debag",beaconTransmitter.isStarted.toString())
         }
@@ -58,6 +60,21 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.inputIntentButton).setOnClickListener {
             val intent = Intent(this,input::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.input2Button).setOnClickListener {
+            val intent = Intent(this,input2Activity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.input3Button).setOnClickListener {
+            val intent = Intent(this,input3Activity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.input4button).setOnClickListener {
+            val intent = Intent(this,input4Activity::class.java)
             startActivity(intent)
         }
 

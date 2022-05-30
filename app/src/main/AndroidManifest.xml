@@ -4,15 +4,16 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
-
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +22,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IbeeconTest">
+        <activity
+            android:name=".input4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".input3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".input2Activity"
+            android:exported="false" />
         <activity
             android:name=".input"
             android:exported="false" />
