@@ -41,8 +41,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    implementation 'org.altbeacon:android-beacon-library:2.19.1'//これ以降のバージョンにすると動かなくなる
+    implementation 'org.altbeacon:android-beacon-library:2.19.5-beta5'
 
-    implementation 'com.neovisionaries:nv-bluetooth:1.8'
+//    implementation 'com.neovisionaries:nv-bluetooth:1.8'
+
+
+    //easyPermission
+    implementation 'pub.devrel:easypermissions:3.0.0'
 
 }
